@@ -118,3 +118,42 @@
 // const sayHello = (name = "ゲスト") => console.log(`こんにちわ!${name}さん!`);
 // sayHello(); // 初期値がない場合、「こんにちわ!undefinedさん!」となってしまう
 // sayHello("じゃけぇ");
+
+/**
+ * スプレッド構文 ...
+ */
+// 配列の展開
+// const arr1 = [1, 2];
+// console.log(arr1);     // [1, 2]
+// console.log(...arr1);  // 1 2
+// この例だとわかりやすい
+// const sumFunc = (num1, num2) => console.log(num1 + num2);
+// sumFunc(arr1[0], arr1[1]); // 3
+// sumFunc(...arr1);          // 3
+
+// まとめる(分割代入と一緒に使われることが多い)
+// const arr2 = [1, 2, 3, 4, 5];
+// const [num1, num2, ...arr3] = arr2;
+// console.log(num1); // 1
+// console.log(num2); // 2
+// console.log(arr3); // [3, 4, 5]
+
+// 配列のコピー、結合
+// const arr4 = [10, 20];
+// const arr5 = [30, 40];
+
+// const arr6 = [...arr4];
+// console.log(arr6); // [10, 20]
+// arr6[0] = 100;
+// console.log(arr6); // [100, 20]
+// console.log(arr4); // [10, 20]
+
+// const arr7 = [...arr4, ...arr5];
+// console.log(arr7); // [10, 20, 30, 40]
+
+// 配列コピーするならシンプルにarr4を入れちゃダメなの？
+// const arr8 = arr4;
+// console.log(arr8); // [10, 20] 確かにコピーされてる
+// arr8[0] = 100;
+// console.log(arr8); // [100, 20] 値を入れ替えると…
+// console.log(arr4); // [100, 20] コピー元のarr4まで値が変わってしまう(参照渡しになっている)
