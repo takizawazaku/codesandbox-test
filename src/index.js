@@ -104,10 +104,10 @@
 
 // 配列で使うケース
 // 通常の書き方
-const myProfile = ["じゃけぇ", 28];
-const message3 = `名前は${myProfile[0]}です。年齢は${myProfile[1]}です。`;
-console.log(message3);
-// 分割代入してみる
-const [name, age] = myProfile;
-const message4 = `名前は${name}です。年齢は${age}歳です。`;
-console.log(message4);
+// const myProfile = ["じゃけぇ", 28];
+// const message3 = `名前は${myProfile[0]}です。年齢は${myProfile[1]}です。`;
+// console.log(message3);
+// // 分割代入してみる
+// const [name, age] = myProfile;
+// const message4 = `名前は${name}です。年齢は${age}歳です。`;
+// console.log(message4);
