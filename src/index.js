@@ -111,3 +111,10 @@
 // const [name, age] = myProfile;
 // const message4 = `名前は${name}です。年齢は${age}歳です。`;
 // console.log(message4);
+
+/**
+ * 関数のフォルト値、引数など
+ */
+// const sayHello = (name = "ゲスト") => console.log(`こんにちわ!${name}さん!`);
+// sayHello(); // 初期値がない場合、「こんにちわ!undefinedさん!」となってしまう
+// sayHello("じゃけぇ");
