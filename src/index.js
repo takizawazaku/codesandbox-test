@@ -157,3 +157,37 @@
 // arr8[0] = 100;
 // console.log(arr8); // [100, 20] 値を入れ替えると…
 // console.log(arr4); // [100, 20] コピー元のarr4まで値が変わってしまう(参照渡しになっている)
+
+/**
+ * mapやfilterを使った配列の処理
+ */
+// const nameArr = ["田中", "山田", "じゃけぇ"];
+// for文の場合
+// for (let i = 0; i < nameArr.length; i++) {
+//   console.log(`${i + 1}番目は${nameArr[i]}です`);
+// }
+
+// mapの基本的な構文
+// const nameArr2 = nameArr.map((name) => {
+//   return name;
+// });
+// console.log(nameArr2);
+
+// for文で3行で書いてたものをmap関数で1行で書く例
+// nameArr.map((name, i) => console.log(`${i + 1}番目は${name}です`));
+
+// filterで数値の配列から奇数のみ抽出する
+// const numArr = [1, 2, 3, 4, 5];
+// const newNumArr = numArr.filter((num) => {
+//   return num % 2 === 1;
+// });
+// console.log(newNumArr); // [1, 3, 5]
+
+// const newNameArr = nameArr.map((name) => {
+//   if (name === "じゃけぇ") {
+//     return name;
+//   } else {
+//     return `${name}さん`;
+//   }
+// });
+// console.log(newNameArr); // ["田中さん", "山田さん", "じゃけぇ"]
